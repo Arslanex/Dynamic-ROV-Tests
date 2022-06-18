@@ -10,7 +10,7 @@ def is_cuda_enabled():
         print("\nINFO :: Your device is not CUDA enabled")
     else:
         print("\nINFO :: Your device is CUDA enabled")
-        print("\t enabled device count is ", dev)
+        print("           Enabled device count is ", dev)
 
 def cpu_vs_gpu():
     print("This script will do the same operation on CPU and GPU and\n"
