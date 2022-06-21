@@ -1,5 +1,4 @@
 # Dynamic-ROV-Tests 
-<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Arslanex/Dynamic-ROV-Tests?logo=Github&style=for-the-badge">
 Bu repo Dynamic ROV takımının 2021 - 2022 yılı Teknofest hazılanırken yaptığı testler ve kullandığı kod dosyalarını içeren repodur. 
 
 ## Test 0 :: OpenCV ve CUDA Kurulum Testleri
