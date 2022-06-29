@@ -14,7 +14,7 @@ System Check Yazılımı :: https://github.com/Arslanex/System-Check
 
 Eğer OpenCV kurulumu doğru yapılmış ise geri kalan denemelri yapmaya devam edebilirsiniz. İlk olarak normal FPS değerini test etmek ile işleme başladım. Sonrasonda Yolov3-320, Yolov3-416 ve Yolov3-Tiny modellerini kullanarak FPS tesleri yaptım. Aldığım sonuçlar aşağıdaki gibi oldu.
 
-- Normal ::
-- Yolov3-320 ::
-- Yolov3-416 ::
-- Yolov3-Tiny ::
+- Normal :: 25 fps
+- Yolov3-320 :: 1 fps
+- Yolov3-416 :: 3 fps
+- Yolov3-Tiny :: 7 fps
