@@ -106,7 +106,7 @@ while True:
         elif(a[0][0] > 980):
             serialcomm.write("L".encode())
         else:
-            serialcomm.write("90".encode())
+            serialcomm.write("M".encode())
 
     print(serialcomm.readline().decode('ascii'))
     cv.line(frame, (300, 0), (300, 720), (255,0,255), 1)
