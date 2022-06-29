@@ -1,12 +1,20 @@
 # Dynamic-ROV-Tests 
-Bu repo Dynamic ROV takımının 2021 - 2022 yılı Teknofest hazılanırken yaptığı testlerin bir dökümüdür. Testler sırasında kullanılan kod dosyaları ve elde edilen sonuçlar 
-repo içindeki farklı branclarda detaylı şekilde bulunmaktadır. 
+Jetson Nano'da daha iyi FPS alabilmek için CUDA yani GPU kullanımını sağlamalıyız. Bunun için CUDA uyumlu OpenCV kurulumu gerekmektedir. Ben aşağıda belirttiğim link üzerinden indirme işlemini gerçekleştirdim.
 
-## Test 1 :: Masaüstü Servo Kontrol Denemeleri
-Amacımız esne tespiti sonucu elde ettiğimiz koordinat bilgisine göre arduinoya bağlı servo motoru hareket ettirmektir. Testlerin sonçlarını ve bu süreçte kullanılan kodları, ' servp_control ' branch'ında bulabilirsiniz. 
+Link :: https://qengineering.eu/install-opencv-4.5-on-jetson-nano.html
 
-## Test 2 :: Jetson Nano - Yolo FPS Testleri
-Jetson nano gibi sınırlı bir donanımda daha yüksek FPS alabilmek için denediğimiz yöntemler ve sonuçlarını fps_testleri branch'ında bulabilirsiniz.
+Opencv kurulumu bittikten sonra kartın özelliklerini test etmek kaldı. Bunun için kendi yazdığım yazılımı kullanacağım. Basitçe özetlemem gerekir ise yazılımın üç ana gmrevi var :
+1. OpenCV kurulumunu kontrol etme
+2. CPU ve GPU gücünü karşılaştırma
+3. FPS tesletleri yaparak tahmini FPS değerini öğrenme
 
-## Test 3 :: Jetson Nano ile Servo Kontrol Denemeleri
-Daha önce windows üzerinden arduino ile yaptığımız servo kontrol işlemini jetson nano kartı üzerinde tekrar gerçekleştiriyoruz.
+Bunu kullanmak için repo içindeki __main__.py ve __CudaControl.py__ kod dosyaları gerekmektedir. Aynı dizine yerleştridikten sonra tek yapmanız gereken terminalden __main__.py dosyasını çalıştrımaktır. Geri kalanı uygulama menüsü üzerinden gerçekleştirebilirsiniz. Yazılımın full halinin linkinide aşağıda bulabilirsiniz.
+
+System Check Yazılımı :: https://github.com/Arslanex/System-Check
+
+Eğer OpenCV kurulumu doğru yapılmış ise geri kalan denemelri yapmaya devam edebilirsiniz. İlk olarak normal FPS değerini test etmek ile işleme başladım. Sonrasonda Yolov3-320, Yolov3-416 ve Yolov3-Tiny modellerini kullanarak FPS tesleri yaptım. Aldığım sonuçlar aşağıdaki gibi oldu.
+
+- Normal ::
+- Yolov3-320 ::
+- Yolov3-416 ::
+- Yolov3-Tiny ::
